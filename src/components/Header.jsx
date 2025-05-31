@@ -18,7 +18,7 @@ const Header = () => {
 
 
       <div className="col-span-8 flex justify-center">
-        <div className="flex border rounded overflow-hidden w-full max-w-md">
+        <div className="flex border border-gray-500 rounded-2xl overflow-hidden w-full max-w-md">
           <input
             type="text"
             className="px-3 py-1 outline-none w-full"
