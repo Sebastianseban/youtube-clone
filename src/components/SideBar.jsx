@@ -1,20 +1,24 @@
 import React from "react";
-import { MdOutlineVideoLibrary, MdOutlineSubscriptions } from "react-icons/md";
+import { MdOutlineVideoLibrary, MdOutlineSubscriptions, MdHome } from "react-icons/md";
 import { FaMusic, FaRunning, FaGamepad, FaFilm } from "react-icons/fa";
-import { BiVideo, BiTimeFive } from "react-icons/bi";
+import { BiVideo } from "react-icons/bi";
 import { SiYoutubeshorts } from "react-icons/si";
 import { MdLiveTv } from "react-icons/md";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
-
-  const isMenuOpen = useSelector((store)=> store.app.isMenuOpen)
+  const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
   if (!isMenuOpen) return null;
 
-
- return (
+  return (
     <div className="p-5 w-56 h-screen shadow-lg overflow-y-auto text-sm space-y-6">
       <ul className="space-y-3">
+        <li className="flex items-center space-x-3 hover:bg-gray-100 p-2 rounded cursor-pointer">
+          <Link to="/" className="flex items-center space-x-3 w-full">
+            <MdHome /> <span>Home</span>
+          </Link>
+        </li>
         <li className="flex items-center space-x-3 hover:bg-gray-100 p-2 rounded cursor-pointer">
           <SiYoutubeshorts /> <span>Shorts</span>
         </li>
