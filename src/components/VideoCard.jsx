@@ -31,4 +31,22 @@ const VideoCard = ({ info }) => {
   );
 };
 
+
+export const AdVideoCard = ({info}) => {
+  return(
+   <div className="relative">
+      {/* Ad Label */}
+      <div className="absolute top-2 left-2 bg-yellow-400 text-black text-xs font-semibold px-2 py-1 rounded z-10 shadow-sm">
+        Ad
+      </div>
+
+      {/* Highlighted border to indicate it's an ad */}
+      <div className="border-2 border-yellow-400 rounded-lg overflow-hidden">
+        <VideoCard info={info} />
+      </div>
+    </div>
+  )
+
+}
+
 export default VideoCard;
