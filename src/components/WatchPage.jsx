@@ -14,6 +14,7 @@ import {
 import { PiShareFatLight } from "react-icons/pi";
 import { HiDownload } from "react-icons/hi";
 import { BsThreeDots } from "react-icons/bs";
+import LiveChat from "./LiveChat";
 
 const WatchPage = () => {
   const dispatch = useDispatch();
@@ -48,7 +49,8 @@ const WatchPage = () => {
 
   return (
     <div className="p-4">
-      <div className="overflow-hidden rounded-xl">
+    <div className="flex gap-3">
+        <div className="overflow-hidden rounded-xl">
         <iframe
           width="1000px"
           height="600"
@@ -59,6 +61,10 @@ const WatchPage = () => {
           allowFullScreen
         ></iframe>
       </div>
+      <div>
+        <LiveChat/>
+      </div>
+    </div>
 
       {/* Video Info */}
       <h2 className="text-xl font-bold mt-4">{snippet.title}</h2>
