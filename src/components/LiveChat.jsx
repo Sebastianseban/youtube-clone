@@ -46,7 +46,7 @@ const LiveChat = () => {
         </h1>
       </div>
 
-      <div className="flex-1 overflow-y-auto p-4 flex flex-col-reverse space-y-4 space-y-reverse">
+      <div className="flex-1 overflow-y-auto p-4 flex space-y-2 flex-col-reverse space-y-reverse">
         {chatMessage.map((msg) => (
           <ChatMessage key={msg.id} name={msg.name} message={msg.message} />
         ))}
