@@ -14,7 +14,7 @@ export const DUMMY_MESSAGES = [
     name: "TechSavvy",
     message: "Dark mode supremacy 💻🌙",
   },
-  // ... rest unchanged
+  
 ];
 
 const LiveChat = () => {
